@@ -10,6 +10,12 @@ $clientID = "CLIENT-ID";
 $clientSecret = "CLIENT-SECRET";
 $callback = "CALLBACK-URL";
 
+//Database credentials
+$hostname = "HOSTNAME";
+$username = "USERNAME";
+$dbname = "DBNAME";
+$password = "PASSWORD";
+
 //Create client object with app credentials
 $client = new Services_Soundcloud($clientID,$clientSecret,$callback);
 
@@ -103,10 +109,7 @@ while($visits < 10)
 function store_edge($user_id,$following_id)
 {
     //Database credentials
-    $hostname = "HOSTNAME";
-    $username = "USERNAME";
-    $dbname = "DBNAME";
-    $password = "PASSWORD";
+    global $hostname, $username, $dbname, $password;
     
     //Edge insertion queries
     mysql_connect($hostname,$username,$password) or die("Unable to Connect to Database");
@@ -119,10 +122,7 @@ function store_edge($user_id,$following_id)
 function store_user($cnt,$id)
 {
     //Database credentials
-    $hostname = "HOSTNAME";
-    $username = "USERNAME";
-    $dbname = "DBNAME";
-    $password = "PASSWORD";
+    global $hostname, $username, $dbname, $password;
 
     //User insertion queries
     mysql_connect($hostname,$username,$password) or die("Unable to Connect to Database");
@@ -135,10 +135,7 @@ function store_user($cnt,$id)
 function fetch_next_user($cnt)
 {
     //Database credentials
-    $hostname = "HOSTNAME";
-    $username = "USERNAME";
-    $dbname = "DBNAME";
-    $password = "PASSWORD";
+    global $hostname, $username, $dbname, $password;
 
     //User ID fetch queries
     mysql_connect($hostname,$username,$password) or die("Unable to Connect to Database");
