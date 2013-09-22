@@ -5,25 +5,32 @@ This PHP script is used to collect the friendship network of a set of users from
 
 To make this script work, you need to do the following
 
+Download PHP SDK for SoundCloud.com
+-----------------------------------
+1. Download the PHP SDK for SoundCloud.com from https://github.com/mptre/php-soundcloud
+
+2. Copy the 'Services' folder from the extracted PHP SDK and paste it inside the folder containing the 'connect.php' and 'callback.php' file.
+
 Register an App on SoundCloud.com
 ---------------------------------
 
 1. Register an App on SoundCloud.com. 
 2. You will be provided with a Client ID and Client Secret.
-3. In the field for Callback URL, provide the location of the "callback.php" file.
+3. In the field for Callback URL, provide the location of the 'callback.php' file.
 
 Update Client ID, Client Secret and Callback URL
 ------------------------------------------------
 
-1. On line# 6 - 8 of "connect.php" and line# 9 - 11 of "callback.php", update the placeholders with the values of the Client ID, Client Secret and Callback URL for your app.
+1. On line# 6 - 8 of 'connect.php' and line# 9 - 11 of 'callback.php', update the placeholders with the values of the Client ID, Client Secret and Callback URL for your app.
 
 Create Database and two tables for the users and edges
 ------------------------------------------------------
 
 1. Create a database and two tables as follows.
 
-	a) Create table 'SCUser' with two fields 'S.No' which is the primary key and 'SCUserId' which is a unique key. Both are of type Long Integer
-	b) Create table 'Edges' with two fields 'UserID' and 'FollowingID'. Both are of type Long Integer.
+  a) Create table 'SCUser' with two fields 'S.No' which is the primary key and 'SCUserId' which is a unique key. Both are of type Long Integer
+
+  b) Create table 'Edges' with two fields 'UserID' and 'FollowingID'. Both are of type Long Integer.
 
 Update Database Credentials
 ---------------------------
