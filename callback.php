@@ -37,8 +37,8 @@ $visits = 0;
 //We do this to allow unlimited running time
 set_time_limit(0);
 
-//We crawl the friendship network until we have visited 5000 nodes
-while($visits < 10)
+//We crawl the friendship network until we have visited 50000 nodes
+while($visits <= 50000)
 {
     //Fetch user information
     $user_info = json_decode(fetch_user_info('http://api.soundcloud.com/users/'.$user_id.'.json?client_id='.$clientID));    
