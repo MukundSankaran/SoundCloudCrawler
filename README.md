@@ -1,7 +1,7 @@
 SoundCloudCrawler
 =================
 
-This PHP script is used to collect the friendship network of a set of users from SoundCloud.com
+These PHP scripts are used to collect the friendship network of a set of users from SoundCloud.com
 
 To make this script work, you need to do the following
 
