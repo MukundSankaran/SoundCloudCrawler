@@ -15,7 +15,9 @@ Register an App on SoundCloud.com
 ---------------------------------
 
 1. Register an App on SoundCloud.com. 
+
 2. You will be provided with a Client ID and Client Secret.
+
 3. In the field for Callback URL, provide the location of the 'callback.php' file.
 
 Update Client ID, Client Secret and Callback URL
